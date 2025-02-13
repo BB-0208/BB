@@ -1,80 +1,98 @@
 @charset "UTF-8";
 
-HTML {
+ html {
 	font-size: 100%;
+	/* 設定基礎字體大小，利於使用 rem 單位 */
 }
-body {
+ body {
 	line-height: 1.7;
+	/* 設定全局文字的行高 */
 	color: #432;
+	/* 設定全局文字顏色 */
 }
-a {
+ a {
 	text-decoration: none;
+	/* 移除所有連結的預設底線 */
 }
-img{
+ img{
 	max-width: 100%;
+	/* 圖片寬度不超過父元素寬度，保持響應式 */
 }
 
-#news{
+	#news {
 	background-image: url(images/news-bg.jpg);
+	/* 設定 NEWS 區域的背景圖片 */
 	height: 270px;
 	margin-bottom: 40px;
 }
-#news .page-title {
+	#news .page-title {
 	text-align: center;
+	/* 標題文字置中對齊 */
 }
 
-.big-bg {
+ .big-bg{
 	background-size: cover;
+	/* 背景圖片覆蓋整個區域 */
 	background-position: center top;
+	/* 圖片對齊中心且靠上 */
 	background-repeat: no-repeat;
-	
+	/* 禁止背景重複 */
 }
 
-
-.logo {
+ .logo {
 	width: 210px;
 	margin-top: 14px;
 }
-.main-nav {
+ .main-nav{
 	display: flex;
+	/* 將主選單項目水平排列 */
 	font-size: 1.25rem;
+	/* 選單文字大小 */
 	text-transform: uppercase;
 	margin-top: 34px;
 	list-style: none;
+	/* 移除預設列表樣式 */
 }
-.main-nav li {
+ .main-nav li{
 	margin-left: 36px;
 }
-.main-nav a {
+ .main-nav a{
 	color: #432;
 }
-.main-nav a:hover {
+ .main-nav a:hover {
 	color: #0bd;
 }
-.page-header {
+ .page-header {
 	display: flex;
 	justify-content: space-between;
+	/* 將 LOGO 和選單分佈在兩端 */
 }
-.wrapper {
+ .wrapper {
 	max-width: 1100px;
 	margin: 0 auto;
+	/* 置中內容 */
 	padding: 0 4%;
 }
-.page-title {
+ .page-title {
 	font-size: 5rem;
 	text-transform: uppercase;
+	/* 將標題文字轉為大寫 */
 	font-weight: normal;
+	/* 設定文字粗細 */
 }
-article {
+ article {
 	width: 60%;
+	/* 文章部分佔據 60% 的寬度 */
 	order: 2;
+	/* 排列順序設定 */
 }
-.post-info {
+ .post-info {
 	position: relative;
+	/* 用於定位內部的子元素 */
 	padding-top: 4px;
 	margin-bottom:40px;
 }
-.post-title{
+ .post-title {
 	font-size: 2rem;
 	font-weight: normal;
 }
@@ -103,70 +121,96 @@ article {
 
 
 
-.post-date {
+ .post-date {
 	background: #0bd;
+	/* 日期圓形背景色 */
 	border-radius: 50%;
+	/* 圓形外觀 */
 	color: #fff; 
 	width: 100px;
 	height: 100px;
 	font-size: 1.625rem;
-	text-align:center;
+	text-align: center;
+	/* 日期文字置中 */
 	position: absolute;
 	top: 0;
-	padding-top:10px;
+	padding-top: 10px;
 }
-.post-date span {
+ .post-date span {
 	font-size: 1rem;
 	border-top: 1px rgba(255,255,255,.5) solid;
 	padding-top: 6px;
-	display:block;
+	display: block;
 	width: 60%;
 	margin: 0 auto;
 }
-.post-title,
-.post-cat{
-	margin-left:120px;
+ .post-title,
+ .post-cat {
+	margin-left: 120px;
+	/* 左邊距增加，避免被日期覆蓋 */
 }
-article img {
+ article img {
 	margin-bottom: 20px;
 }
-article p {
+ article p {
 	margin-bottom: 1rem;
+	/* 設定段落的下間距 */
 }
 
-.news-contents {
+ .news-contents {
 	display: flex;
 	justify-content: space-between;
+	/* 內容橫向分佈 */
 	margin-bottom: 50px;
 }
-aside {
+ aside {
 	width: 22%;
 	order: 3;
+	/* 排列順序 */
 }
-.sub-title {
+ .sub-title {
 	font-size: 1.375rem;
 	padding: 0 8px 8px;
 	border-bottom: 2px #0bd solid;
 	font-weight: normal;
 }
-.sub-menu {
+ .sub-menu {
 	margin-bottom: 60px;
 	list-style-type: none;
+	/* 移除列表預設樣式 */
 }
-.sub-menu li {
+ .sub-menu li {
 	border-bottom: 1px #ddd solid;
+	/* 每個子選單項目底部加分隔線 */
 }
-.sub-menu a {
+ .sub-menu a {
 	color: #432;
 	padding: 10px;
 	display: block;
 }
 
+ .sub-menu a:hover {
+	color: #0bd;
+}
+
+ aside p {
+	padding: 12px 10px;
+}
 
 
+ .ad {
+	order: 1;
+	/* 廣告區域順序 */
+}
 
 
+ footer {
+	background: #432;
+	text-align: center;
+	padding: 26px 0;
+}
 
-
-
-
+ footer p{
+	color: #fff;
+	font-size: 0.875rem;
+}
